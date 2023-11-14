@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem Geral de Produtos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleUpdade.css">
+
+</head>
+<body>
+    <table id="tbProds">
+        <thead>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Fabricante</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Custo</th>
+            <th>Data / Hora</th>
+            <th>Controles</th>
+        </thead>
+        <tbody id="tbodyList"></tbody>
+    </table>
+ 
+    <a href="../index.html">
+        <button id="btnVoltar">Voltar</button>
+    </a>
+
+    <div class="popupWrapper">
+        <div class="popup">
+            <div class="popupClose">x</div>
+            <div class="popupContent">
+                <form>
+                        <div class="codigo">
+                            <label>Código:</label> 
+                            <label id="lblCod"></label>
+                        </div>
+                        <div>
+                            <label>Nome:</label> 
+                            <input type="text" id="inpNome">
+                            
+                            <label>Descrição:</label>
+                            <input type="text" id="inpDesc">
+
+                            <label>fabricante:</label>
+                            <input type="text" id="inpFab">
+                            
+                            <label>Quantidade:</label>
+                            <input type="text" id="inpQtda">
+
+                            <label>Preço:</label>
+                            <input type="text" id="inpPreco">
+
+                            <label>Custo:</label>
+                            <input type="text" id="inpCusto">
+                            
+                        </div>
+                        <div id="btnAlterar" class="closelinkpopup" href="#">Alterar</div>
+                </form>
+             
+                
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="../js/prods.js"> </script>
+</body>
+</html>
